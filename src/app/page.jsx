@@ -17,6 +17,7 @@ const ANNIVERSARY_DATE = "2025-08-02T12:00:00"
 const TOGETHER_DATE = "2026-01-18T12:00:00"
 
 export default function Home() {
+  const mediaBasePath = process.env.NEXT_PUBLIC_BASE_PATH || ""
   const [loading, setLoading] = useState(true)
   const [showContent, setShowContent] = useState(false)
   const [showTapToReveal, setShowTapToReveal] = useState(false)
@@ -57,13 +58,13 @@ export default function Home() {
 
   // Add your photos here
   const photos = [
-    { src: "/image1.jpg", alt: "😁" },
-    { src: "/image2.jpg", alt: "my princess" },
-    { src: "/image3.jpg", alt: "snap memory" } ,
-    { src: "/image4.jpg", alt: "hehe" },
-    { src: "/image5.jpg", alt: "Lol" },
-    { src: "/image6.jpg", alt: "Moments" },
-    { src: "/image7.jpg", alt: "Ofc My Moon and her Moon photos 🤌" },
+    { src: `${mediaBasePath}/image1.jpg`, alt: "😁" },
+    { src: `${mediaBasePath}/image2.jpg`, alt: "my princess" },
+    { src: `${mediaBasePath}/image3.jpg`, alt: "snap memory" } ,
+    { src: `${mediaBasePath}/image4.jpg`, alt: "hehe" },
+    { src: `${mediaBasePath}/image5.jpg`, alt: "Lol" },
+    { src: `${mediaBasePath}/image6.jpg`, alt: "Moments" },
+    { src: `${mediaBasePath}/image7.jpg`, alt: "Ofc My Moon and her Moon photos 🤌" },
   ]
 
   // Change this message according to you

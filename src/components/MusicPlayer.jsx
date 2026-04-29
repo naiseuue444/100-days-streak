@@ -7,9 +7,10 @@ import { Volume2, VolumeX } from "lucide-react"
 export default function MusicPlayer({ playSong }) {
     const [isPlaying, setIsPlaying] = useState(false)
     const audioRef = useRef(null)
+    const mediaBasePath = process.env.NEXT_PUBLIC_BASE_PATH || ""
 
     useEffect(() => {
-        audioRef.current = new Audio("/bg.mp3");
+        audioRef.current = new Audio(`${mediaBasePath}/bg.mp3`);
         audioRef.current.loop = true;
         audioRef.current.volume = 0.5;
 
@@ -20,7 +21,7 @@ export default function MusicPlayer({ playSong }) {
                 audioRef.current = null;
             }
         };
-    }, []);
+    }, [mediaBasePath]);
 
     useEffect(() => {
         if (playSong && audioRef.current && audioRef.current.paused) {
