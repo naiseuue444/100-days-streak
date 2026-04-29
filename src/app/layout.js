@@ -1,8 +1,8 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Happy Anniversary!",
-  description: "A celebration of our love",
+  title: "Happy 100-Day Snapchat Streak!",
+  description: "A celebration of our Snapchat streak milestone",
 }
 
 export default function RootLayout({ children }) {

@@ -81,7 +81,7 @@ export default function DaysTogether({ startDate, animationDuration = 3 }) {
                     transition={{ delay: 0.3 }}
                     className="text-3xl md:text-4xl md:py-1 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 text-center mb-10 animate-gradient"
                 >
-                    Our Beautiful Journey Together
+                    Streak Days and Counting
                 </motion.h2>
 
                 <div className="flex flex-col items-center justify-center">
@@ -134,7 +134,7 @@ export default function DaysTogether({ startDate, animationDuration = 3 }) {
                         transition={{ delay: 0.5 }}
                         className="text-2xl md:text-3xl text-pink-500 font-medium mb-8"
                     >
-                        Beautiful Days Together
+                        Snapchat Streak Days
                     </motion.div>
 
                     <motion.div
@@ -150,8 +150,13 @@ export default function DaysTogether({ startDate, animationDuration = 3 }) {
                         transition={{ delay: 1.2 }}
                         className="text-center text-lg text-gray-600 max-w-2xl"
                     >
-                        Every single day has been a blessing. From our first hello to today, each moment with you has been magical.
-                        Here's to countless more days filled with love, laughter, and beautiful memories!
+                        There were many snaps... but the best part was always you
+                        Somewhere between all those random snaps, you became my favorite part of the day
+                        And maybe that's why this feels a little more than just a streak...
+                        {"\n"}
+                        {"\n"}
+                        'Jab koi kisi ko itna chaahta hai na... toh woh kisi aur ko chaa hi nahi sakta.'
+                        {"\n"}- from Mohabbatein ❤️
                     </motion.p>
 
                     <motion.div
@@ -160,7 +165,7 @@ export default function DaysTogether({ startDate, animationDuration = 3 }) {
                         transition={{ delay: 1.5, type: "spring" }}
                         className="mt-8 text-5xl"
                     >
-                        🥂
+                        👻
                     </motion.div>
                 </div>
             </div>

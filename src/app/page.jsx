@@ -11,10 +11,10 @@ import FloatingElements from "@/components/FloatingElements"
 import TapToReveal from "@/components/TapToReveal"
 import MusicPlayer from "@/components/MusicPlayer"
 
-// Change this to your anniversary date
+// Change this to your 100-day streak target date
 const ANNIVERSARY_DATE = "2025-08-02T12:00:00"
-// Change this to the date you got together
-const TOGETHER_DATE = "2019-08-02T12:00:00"
+// Change this to your Snapchat streak start date
+const TOGETHER_DATE = "2026-01-18T12:00:00"
 
 export default function Home() {
   const [loading, setLoading] = useState(true)
@@ -31,7 +31,7 @@ export default function Home() {
   }, [])
 
   useEffect(() => {
-    // Check if the anniversary date has passed
+    // Check if the streak milestone date has passed
     const now = new Date()
     const anniversary = new Date(ANNIVERSARY_DATE)
     if (now >= anniversary) {
@@ -57,23 +57,30 @@ export default function Home() {
 
   // Add your photos here
   const photos = [
-    { src: "/image1.jpg", alt: "You + Me = Always 💑⏱️" },
-    { src: "/image2.jpg", alt: "Special moment" },
-    { src: "/image3.jpg", alt: "Just us — in love, in sync 💑💞" } ,
-    { src: "/image4.jpg", alt: "Us together" },
-    { src: "/image5.jpg", alt: "💖Two hearts, one time — holding on to forever 🕰️❤️🤝" },
-    { src: "/image6.jpg", alt: "Happy times" },
-    { src: "/image7.jpg", alt: "📸 The moment she said ‘I love you too’ — forever captured, forever cherished 💖" },
+    { src: "/image1.jpg", alt: "😁" },
+    { src: "/image2.jpg", alt: "my princess" },
+    { src: "/image3.jpg", alt: "snap memory" } ,
+    { src: "/image4.jpg", alt: "hehe" },
+    { src: "/image5.jpg", alt: "Lol" },
+    { src: "/image6.jpg", alt: "Moments" },
+    { src: "/image7.jpg", alt: "Ofc My Moon and her Moon photos 🤌" },
   ]
 
   // Change this message according to you
-  const message = `Dear Love,
-This journey with you has been the most beautiful adventure of my life. Every moment spent with you feels like a blessing, and I cherish each day we've been together.
-From our first meeting to today, you've filled my life with joy, laughter, and unconditional love. Your smile brightens my darkest days, and your love gives me strength when I need it most.
-As we celebrate another year together, I want you to know that my love for you grows stronger with each passing day. You are my best friend, my confidant, and my soulmate.
-Happy Anniversary, my love! Here's to many more years of creating beautiful memories together.
+  const message = `Dear little mouse,
+
+The Last 100 days with you has been one of the most real and unforgettable parts of my life It wasn't always easy there were moments of confusion tears and overthinking... but every single part of it mattered a lot for me
+
+Through all the ups and downs what stayed constant was how I felt about you And in the end what truly makes me happy is that I could express my love to you not completely but ya You know how much you mean to me and honestly that's what matters the most
+
+Maybe things weren't perfect maybe we had our share of emotional moments but still... it was beautiful in its own way Because it was us
+
+I'll always cherish what we had every smile every tear every memory You'll always have a special place in my heart no matter what
+
+Maybe the days ahead will be kinder to us softer and filled with more reasons to smile than to cry In Sha Allah and I hope we grow through everything we've felt so far and find a kind of happiness that stays No matter how this journey has been I know one thing clearly I love You and I'll keep holding onto that as we move forward
+
 With all my heart,
-Yash Kewat`
+Me`
 
   return (
     <main className="min-h-screen overflow-x-hidden bg-gradient-to-br from-pink-100 via-purple-50 to-blue-100">
@@ -118,9 +125,9 @@ Yash Kewat`
               <div className="absolute -bottom-28 -right-14 w-32 h-32 text-5xl animate-float-delay">🌺</div>
 
               <h1 className="text-4xl md:text-5xl py-1.5 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 mb-4 animate-gradient">
-                Our Anniversary is Coming!
+                100-Day Snapchat Streak Incoming!
               </h1>
-              <p className="text-xl text-purple-700 font-medium">The countdown to our special day ❤️</p>
+              <p className="text-xl text-purple-700 font-medium">Countdown to the 100 streak milestone 🔥</p>
             </motion.div>
 
             <Countdown targetDate={ANNIVERSARY_DATE} onComplete={handleCountdownComplete} />
@@ -152,9 +159,9 @@ Yash Kewat`
                 </div>
 
                 <h1 className="text-4xl md:text-6xl py-1 md:py-2 px-6 font-bold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-purple-500 to-pink-500 mb-3 animate-gradient">
-                  Happy Anniversary!
+                  100 Days... and You
                 </h1>
-                <p className="text-xl text-purple-700 font-medium">Every moment with you is a blessing ❤️</p>
+                <p className="text-xl text-purple-700 font-medium">And I wouldn't mind more 100s 1000s like this...</p>
               </motion.div>
 
               <DaysTogether startDate={TOGETHER_DATE} animationDuration={3} />
@@ -169,7 +176,7 @@ Yash Kewat`
                 transition={{ delay: 1.5 }}
                 className="text-center mt-16 mb-8 text-pink-600"
               >
-                <p className="text-lg font-medium">Made with ❤️ by YASH KEWAT</p>
+                <p className="text-lg font-medium">Made with love by naise only for mahek khan</p>
               </motion.footer>
             </motion.div>
           </>
