@@ -14,7 +14,9 @@ export default function DaysTogether({ startDate, animationDuration = 3 }) {
             const now = new Date()
             const diffTime = Math.abs(now - start)
             const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24))
-            return diffDays
+            // Keep this celebration locked to the "100 day streak" milestone.
+            // Without this, timezone/day boundaries can show 101 on/after milestone day.
+            return Math.min(diffDays, 100)
         }
 
         const days = calculateDays()
